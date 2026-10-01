@@ -50,7 +50,7 @@ def head(title, desc, slug, kind="WebPage", image="editorial", noindex=False, cr
 <meta name="robots" content="{'noindex,follow' if noindex else 'index,follow,max-image-preview:large'}">
 <meta name="referrer" content="strict-origin-when-cross-origin">{canonical}
 <link rel="preload" href="/assets/fonts/Gandom.woff" as="font" type="font/woff" crossorigin>
-<link rel="stylesheet" href="/assets/css/site.css"><link rel="icon" href="/assets/images/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/site.css?v=20261001-r2"><link rel="icon" href="/assets/images/logo.svg?v=20261001-r2" type="image/svg+xml">
 <meta name="theme-color" content="#102e25">
 <meta property="og:type" content="{'article' if kind=='Article' else 'website'}">
 <meta property="og:locale" content="fa_IR"><meta property="og:site_name" content="{SITE}">
@@ -60,7 +60,7 @@ def head(title, desc, slug, kind="WebPage", image="editorial", noindex=False, cr
 <meta property="og:image:alt" content="{'تصویرسازی مفهومی با اشیای هندسی' if image=='editorial' else 'تصویرسازی زمین فوتبال خالی'}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(title,quote=True)}">
 <meta name="twitter:description" content="{esc(desc,quote=True)}"><meta name="twitter:image" content="{BASE}/assets/images/{image}-social.jpg">
-<script type="application/ld+json">{schema}</script><script src="/assets/js/site.js" defer></script></head><body>"""
+<script type="application/ld+json">{schema}</script><script src="/assets/js/site.js?v=20261001-r2" defer></script></head><body>"""
 
 def header(slug):
     links = [("","خانه"),("games","بازی‌ها"),("reviews","بررسی نام‌ها"),("guides","راهنماها"),("about","درباره ما")]
@@ -68,7 +68,7 @@ def header(slug):
     return f"""<a class="skip" href="#main">رفتن به محتوای اصلی</a>
 <div class="topline">برای خواندن دقیق‌تر، تصمیم آگاهانه‌تر · ویژه بزرگسالان</div>
 <header class="site-header"><div class="container header-inner">
-<a class="brand" href="/"><img src="/assets/images/logo.svg" width="40" height="40" alt=""><span><strong>{SITE}</strong><small>راهنمای فارسی بازی و سواد دیجیتال</small></span></a>
+<a class="brand" href="/"><img src="/assets/images/logo.svg?v=20261001-r2" width="40" height="40" alt=""><span><strong>{SITE}</strong><small>راهنمای فارسی بازی و سواد دیجیتال</small></span></a>
 <nav class="nav-links" aria-label="منوی اصلی">{nav}</nav><a class="search-link" href="/search/">جستجوی مطالب ↗</a>
 <details class="mobile-nav"><summary>منو</summary><nav aria-label="منوی موبایل">{nav}<a href="/search/">جستجوی مطالب</a></nav></details>
 </div></header>"""
