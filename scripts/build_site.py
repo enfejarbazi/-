@@ -3,6 +3,7 @@
 from pathlib import Path
 from html import escape as esc
 import json
+import re
 import sys
 sys.path.insert(0, str(Path(__file__).parent))
 from content import PAGES, BRANDS, page, section
@@ -21,6 +22,17 @@ def write(path, content):
     target = ROOT / path
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(content,encoding="utf-8")
+
+def prose(text):
+    """Keep address examples readable in an RTL paragraph, without injecting HTML."""
+    pattern=r"https?://[A-Za-z0-9./_?=\u0026%+#@:-]+|\b(?:[A-Za-z0-9-]+\.)+(?:com|org|net|test)\b|(?<!\w)/help\b"
+    pieces=[]; start=0
+    for match in re.finditer(pattern,text):
+        pieces.append(esc(text[start:match.start()]))
+        pieces.append("<bdi>"+esc(match.group())+"</bdi>")
+        start=match.end()
+    pieces.append(esc(text[start:]))
+    return "".join(pieces)
 
 def head(title, desc, slug, kind="WebPage", image="editorial", noindex=False, crumbs=()):
     url = BASE + href(slug)
@@ -118,7 +130,7 @@ def article(slug,p):
     output+='<div class="article-layout"><article class="article-body"><div class="callout"><strong>آنچه باید بدانید</strong><p>'+esc(p["takeaway"])+'</p></div>'
     for i,s in enumerate(p["sections"]):
         output+=f'<section id="section-{i+1}"><h2>{esc(s["title"])}</h2>'
-        output+="".join(f'<p>{esc(text)}</p>' for text in s["paragraphs"])
+        output+="".join(f'<p>{prose(text)}</p>' for text in s["paragraphs"])
         if s["bullets"]: output+='<ul>'+"".join(f'<li>{esc(t)}</li>' for t in s["bullets"])+'</ul>'
         if s["table"]:
             cols,rows=s["table"]
