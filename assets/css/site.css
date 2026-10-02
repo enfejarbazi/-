@@ -1318,3 +1318,31 @@ tbody tr:last-child td {
         scroll-behavior: auto;
     }
 }
+
+/* Promo images added to the main بازی انفجار guide */
+
+.promo-image {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.promo-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.promo-android a {
+    display: block;
+}
+
+.promo-android a:hover img {
+    opacity: .96;
+}
+
+@media (max-width: 760px) {
+    .promo-image {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
