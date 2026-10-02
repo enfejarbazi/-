@@ -857,3 +857,48 @@ tbody tr:last-child td {
     scroll-behavior: auto;
   }
 }
+
+/* ==========================================================
+   LAZY-LOADED CRASH VIDEO
+========================================================== */
+
+.video-wrap {
+    margin: 1.9rem 0;
+    overflow: hidden;
+
+    background: #000;
+
+    border: 1px solid var(--line);
+    border-radius: 10px;
+}
+
+.lazy-video {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    background: #000;
+
+    object-fit: contain;
+}
+
+.video-wrap figcaption {
+    padding: .65rem .9rem;
+
+    background: #fff;
+    color: var(--muted);
+
+    border-top: 1px solid var(--line);
+
+    font-size: .78rem;
+}
+
+@media (max-width: 760px) {
+    .video-wrap {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

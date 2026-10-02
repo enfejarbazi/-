@@ -61,3 +61,83 @@
 
   update();
 })();
+
+/* ==========================================================
+   LAZY LOAD VIDEO
+   The MP4 src is not assigned until the player approaches
+   the viewport.
+========================================================== */
+
+(function () {
+    "use strict";
+
+    var video = document.getElementById("crashLazyVideo");
+
+    if (!video) {
+        return;
+    }
+
+    var loaded = false;
+
+    function loadVideo() {
+        if (loaded) {
+            return;
+        }
+
+        var sources = video.querySelectorAll("source[data-src]");
+
+        sources.forEach(function (source) {
+            source.src = source.dataset.src;
+            source.removeAttribute("data-src");
+        });
+
+        video.load();
+        loaded = true;
+    }
+
+    /*
+     * Load slightly before the user reaches the player.
+     * This keeps initial page weight low while avoiding
+     * an obvious delay when Play is pressed.
+     */
+    if ("IntersectionObserver" in window) {
+        var observer = new IntersectionObserver(
+            function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        loadVideo();
+                        observer.disconnect();
+                    }
+                });
+            },
+            {
+                rootMargin: "600px 0px",
+                threshold: 0.01
+            }
+        );
+
+        observer.observe(video);
+    } else {
+        /*
+         * Older-browser fallback.
+         */
+        loadVideo();
+    }
+
+    /*
+     * Interaction fallbacks in case the browser delays the
+     * IntersectionObserver callback.
+     */
+    video.addEventListener("pointerenter", loadVideo, {
+        once: true
+    });
+
+    video.addEventListener("touchstart", loadVideo, {
+        once: true,
+        passive: true
+    });
+
+    video.addEventListener("focus", loadVideo, {
+        once: true
+    });
+})();
