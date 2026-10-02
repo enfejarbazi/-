@@ -1,0 +1,35 @@
+# بازی انفجار
+
+> راهنمای فارسی بازی انفجار شامل آموزش نحوه کار بازی، ضریب، Cashout، الگوریتم، تاریخچه ضرایب، Provably Fair، مدیریت سرمایه و بررسی ادعاهای مرتبط با هک و ربات بازی انفجار.
+
+وب سایت اصلی:
+https://enfejarbazi.github.io/
+
+نویسنده:
+سروش امینی
+
+زبان اصلی محتوا:
+فارسی ایران
+
+این وب سایت یک صفحه اصلی جامع درباره بازی انفجار دارد. مطالب فنی تلاش می کنند بین نحوه محاسبه مبلغ، نتیجه واقعی بازی، راستی آزمایی Provably Fair و ادعاهای پیش بینی نتیجه تفاوت قائل شوند.
+
+## محتوای اصلی
+
+- [بازی انفجار](https://enfejarbazi.github.io/): راهنمای کامل بازی انفجار
+- [آموزش بازی انفجار](https://enfejarbazi.github.io/#how): آموزش قدم به قدم بازی
+- [محاسبه گر بازی انفجار](https://enfejarbazi.github.io/#calculator): محاسبه مبلغ بازگشتی و درصد سرمایه درگیر
+- [اصطلاحات بازی انفجار](https://enfejarbazi.github.io/#terms): توضیح ضریب، Crash، Cashout، Hash، Seed و Bankroll
+- [Cashout بازی انفجار](https://enfejarbazi.github.io/#cashout): برداشت دستی و خودکار
+- [تاریخچه ضرایب](https://enfejarbazi.github.io/#history): کاربرد History و محدودیت آن برای پیش بینی
+- [الگوریتم بازی انفجار](https://enfejarbazi.github.io/#algorithm): توضیح ساختار الگوریتم و تفاوت پیاده سازی ها
+- [Provably Fair](https://enfejarbazi.github.io/#fair): نحوه Commit و Verify نتیجه
+- [هک و ربات بازی انفجار](https://enfejarbazi.github.io/#hack): بررسی ادعاهای پیش بینی ضریب
+- [مدیریت سرمایه](https://enfejarbazi.github.io/#bankroll): بررسی مبلغ هر شرط نسبت به بودجه
+- [بررسی سایت بازی انفجار](https://enfejarbazi.github.io/#site-check): بررسی دامنه و نکات امنیتی
+- [درباره نویسنده](https://enfejarbazi.github.io/#author): سروش امینی
+
+## فایل های مفید
+
+- [نسخه Markdown صفحه اصلی](https://enfejarbazi.github.io/index.md): نسخه متنی ساده برای پردازش ماشینی
+- [Sitemap](https://enfejarbazi.github.io/sitemap.xml): نقشه سایت
+- [Robots](https://enfejarbazi.github.io/robots.txt): قوانین دسترسی خزنده ها
