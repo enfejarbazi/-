@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111722"/>
+<stop offset=".45" stop-color="#24172b"/>
+<stop offset="1" stop-color="#102821"/>
+</linearGradient>
+<linearGradient id="line" x1="0" y1="1" x2="1" y2="0">
+<stop offset="0" stop-color="#ff8a3d"/>
+<stop offset=".34" stop-color="#ff4f9d"/>
+<stop offset=".68" stop-color="#826cff"/>
+<stop offset="1" stop-color="#39d9a4"/>
+</linearGradient>
+</defs>
+
+<rect width="1200" height="760" rx="42" fill="url(#bg)"/>
+
+<g opacity=".13" stroke="#fff">
+<line x1="110" y1="610" x2="1090" y2="610"/>
+<line x1="110" y1="490" x2="1090" y2="490"/>
+<line x1="110" y1="370" x2="1090" y2="370"/>
+<line x1="110" y1="250" x2="1090" y2="250"/>
+<line x1="110" y1="130" x2="1090" y2="130"/>
+</g>
+
+<path
+d="M120 595
+C250 585 345 555 440 510
+C550 455 620 395 715 315
+C820 225 920 165 1070 100"
+fill="none"
+stroke="url(#line)"
+stroke-width="17"
+stroke-linecap="round"/>
+
+<circle cx="1070" cy="100" r="20" fill="#39d9a4"/>
+
+<text x="110" y="92"
+fill="#fff"
+font-family="Arial"
+font-size="48"
+font-weight="700">
+CRASH GAME
+</text>
+
+<text x="110" y="690"
+fill="#abb6c4"
+font-family="Arial"
+font-size="28">
+Multiplier • Cashout • Provably Fair
+</text>
+</svg>
