@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200"
+     height="620"
+     viewBox="0 0 1200 620"
+     role="img"
+     aria-labelledby="title desc">
+
+<title id="title">مقایسه برد و باخت در بازی انفجار</title>
+
+<desc id="desc">
+دو سناریوی آموزشی که نشان می دهد Cashout پیش از Crash باعث ثبت بازگشت می شود و Crash پیش از Cashout باعث از دست رفتن شرط همان راند می شود
+</desc>
+
+<rect width="1200" height="620" fill="#f7f8fa"/>
+
+<rect
+x="55"
+y="55"
+width="520"
+height="510"
+rx="20"
+fill="#ffffff"
+stroke="#dfe3e8"
+stroke-width="2"/>
+
+<rect
+x="625"
+y="55"
+width="520"
+height="510"
+rx="20"
+fill="#ffffff"
+stroke="#dfe3e8"
+stroke-width="2"/>
+
+<circle cx="315" cy="155" r="58" fill="#e6f4ea"/>
+<path
+d="M282 154 L306 179 L352 128"
+fill="none"
+stroke="#188038"
+stroke-width="14"
+stroke-linecap="round"
+stroke-linejoin="round"/>
+
+<text
+x="315"
+y="258"
+text-anchor="middle"
+font-family="Tahoma, Arial"
+font-size="32"
+font-weight="700"
+fill="#188038">
+Cashout قبل از Crash
+</text>
+
+<text
+x="315"
+y="325"
+text-anchor="middle"
+font-family="Tahoma, Arial"
+font-size="26"
+fill="#3c4043">
+شرط 100,000
+</text>
+
+<text
+x="315"
+y="370"
+text-anchor="middle"
+font-family="Tahoma, Arial"
+font-size="26"
+fill="#3c4043">
+خروج در 2.10x
+</text>
+
+<text
+x="315"
+y="430"
+text-anchor="middle"
+font-family="Tahoma, Arial"
+font-size="31"
+font-weight="700"
+fill="#1769aa">
+210,000
+</text>
+
+<circle cx="885" cy="155" r="58" fill="#fce8e6"/>
+
+<path
+d="M850 120 L920 190
+M920 120 L850 190"
+stroke="#c5221f"
+stroke-width="14"
+stroke-linecap="round"/>
+
+<text
+x="885"
+y="258"
+text-anchor="middle"
+font-family="Tahoma, Arial"
+font-size="32"
+font-weight="700"
+fill="#c5221f">
+Crash قبل از Cashout
+</text>
+
+<text
+x="885"
+y="325"
+text-anchor="middle"
+font-family="Tahoma, Arial"
+font-size="26"
+fill="#3c4043">
+شرط 100,000
+</text>
+
+<text
+x="885"
+y="370"
+text-anchor="middle"
+font-family="Tahoma, Arial"
+font-size="26"
+fill="#3c4043">
+Crash در 2.30x
+</text>
+
+<text
+x="885"
+y="430"
+text-anchor="middle"
+font-family="Tahoma, Arial"
+font-size="31"
+font-weight="700"
+fill="#c5221f">
+بازگشت 0
+</text>
+
+</svg>

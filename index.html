@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="fa-IR" dir="rtl">
 
 <head>
@@ -7,13 +8,13 @@
 
 <meta
     name="viewport"
-    content="width=device-width,initial-scale=1,viewport-fit=cover">
+    content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-<title>سایت شرط بندی | بازی انفجار</title>
+<title>سایت شرط بندی</title>
 
 <meta
     name="description"
-    content="راهنمای کامل بازی انفجار شامل آموزش بازی، ضریب، کش اوت، الگوریتم، تاریخچه، Provably Fair، مدیریت ریسک و بررسی ادعاهای هک و پیش بینی.">
+    content="راهنمای کامل بازی انفجار شامل نحوه کار ضریب، Cashout، آموزش قدم به قدم، الگوریتم، Provably Fair، تاریخچه، مدیریت ریسک و بررسی ادعاهای هک و ربات.">
 
 <meta
     name="robots"
@@ -33,29 +34,49 @@
     href="https://enfejarbazi.github.io/">
 
 <link
+    rel="alternate"
+    hreflang="x-default"
+    href="https://enfejarbazi.github.io/">
+
+<link
+    rel="preload"
+    href="/assets/fonts/Gandom.woff"
+    as="font"
+    type="font/woff"
+    crossorigin>
+
+<link
     rel="stylesheet"
-    href="/assets/css/style.css">
+    href="/assets/css/site.css">
 
 <link
     rel="icon"
-    href="/assets/images/logo.svg"
+    href="/assets/images/favicon.svg"
     type="image/svg+xml">
 
 <meta
     name="theme-color"
-    content="#090c12">
+    content="#ffffff">
 
-<meta property="og:type" content="article">
-<meta property="og:locale" content="fa_IR">
-<meta property="og:site_name" content="سایت شرط بندی">
+<meta
+    property="og:type"
+    content="article">
+
+<meta
+    property="og:locale"
+    content="fa_IR">
+
+<meta
+    property="og:site_name"
+    content="سایت شرط بندی">
 
 <meta
     property="og:title"
-    content="سایت شرط بندی | بازی انفجار">
+    content="بازی انفجار">
 
 <meta
     property="og:description"
-    content="آموزش بازی انفجار، ضریب، Cashout، الگوریتم و بررسی Provably Fair">
+    content="راهنمای جامع بازی انفجار، ضریب، Cashout، الگوریتم و Provably Fair">
 
 <meta
     property="og:url"
@@ -63,33 +84,87 @@
 
 <meta
     property="og:image"
-    content="https://enfejarbazi.github.io/assets/images/hero.svg">
+    content="https://enfejarbazi.github.io/assets/images/crash-guide.svg">
+
+<meta
+    property="og:image:alt"
+    content="نمودار آموزشی بازی انفجار و Cashout">
+
+<meta
+    name="twitter:card"
+    content="summary_large_image">
+
+<meta
+    name="twitter:title"
+    content="بازی انفجار">
+
+<meta
+    name="twitter:description"
+    content="راهنمای بازی انفجار و نحوه کار ضریب و Cashout">
+
+<meta
+    name="twitter:image"
+    content="https://enfejarbazi.github.io/assets/images/crash-guide.svg">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "@id": "https://enfejarbazi.github.io/#article",
-  "url": "https://enfejarbazi.github.io/",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://enfejarbazi.github.io/"
-  },
-  "headline": "بازی انفجار",
-  "description": "راهنمای بازی انفجار شامل نحوه کار ضریب، Cashout، الگوریتم و Provably Fair",
-  "inLanguage": "fa-IR",
-  "dateModified": "2026-10-02",
-  "author": {
-    "@type": "Person",
-    "@id": "https://enfejarbazi.github.io/#soroush-amini",
-    "name": "سروش امینی",
-    "jobTitle": "نویسنده و پژوهشگر محتوای وب"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "سایت شرط بندی",
-    "url": "https://enfejarbazi.github.io/"
-  }
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://enfejarbazi.github.io/#website",
+      "url": "https://enfejarbazi.github.io/",
+      "name": "سایت شرط بندی",
+      "inLanguage": "fa-IR"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://enfejarbazi.github.io/#soroush-amini",
+      "name": "سروش امینی",
+      "url": "https://enfejarbazi.github.io/#author",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://enfejarbazi.github.io/assets/images/soroush-amini.jpg",
+        "width": 400,
+        "height": 400
+      },
+      "jobTitle": "نویسنده"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://enfejarbazi.github.io/#article",
+      "url": "https://enfejarbazi.github.io/",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://enfejarbazi.github.io/"
+      },
+      "headline": "بازی انفجار",
+      "description": "راهنمای جامع بازی انفجار شامل ضریب، Cashout، الگوریتم، Provably Fair، تاریخچه و مدیریت ریسک.",
+      "inLanguage": "fa-IR",
+      "datePublished": "2026-10-02",
+      "dateModified": "2026-10-02T14:42:40Z",
+      "author": {
+        "@id": "https://enfejarbazi.github.io/#soroush-amini"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "سایت شرط بندی",
+        "url": "https://enfejarbazi.github.io/"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://enfejarbazi.github.io/assets/images/crash-guide.svg",
+        "width": 1200,
+        "height": 675
+      },
+      "about": [
+        "بازی انفجار",
+        "Crash Game",
+        "Cashout",
+        "Provably Fair"
+      ]
+    }
+  ]
 }
 </script>
 
@@ -97,93 +172,34 @@
 
 <body>
 
-<header>
-
-<div class="container header-inner">
-
-<a class="logo" href="/">
-
-<img
-    src="/assets/images/logo.svg"
-    width="38"
-    height="38"
-    alt="">
-
-<span>
-سایت شرط بندی
-</span>
-
+<a
+    class="skip"
+    href="#main">
+رفتن به محتوای اصلی
 </a>
 
-<nav aria-label="منوی اصلی">
+<header class="site-header">
 
-<a href="#what">
-بازی انفجار
-</a>
-
-<a href="#training">
-آموزش
-</a>
-
-<a href="#terms">
-اصطلاحات
-</a>
-
-<a href="#history">
-تاریخچه
-</a>
-
-<a href="#fair">
-Provably Fair
-</a>
-
-<a href="#sites">
-سایت ها
-</a>
-
-<a href="#author">
-نویسنده
-</a>
-
-</nav>
-
-</div>
-
-</header>
-
-<main>
-
-<section class="hero">
-
-<div class="container hero-grid">
-
-<div>
-
-<p class="eyebrow">
-راهنمای بازی انفجار
-</p>
-
-<h1>
-بازی انفجار
-</h1>
-
-<p class="lead">
-بازی انفجار یک بازی ضریب محور و سریع است که قوانین ظاهری
-ساده ای دارد. در هر راند مبلغ شرط مشخص می شود، ضریب شروع
-به افزایش می کند و بازیکن باید پیش از پایان راند Cashout کند.
-</p>
-
-<p>
-در این بازی خبری از کارت، مهره یا جدول پیچیده نیست و بخش
-اصلی تصمیم گیری به زمان خروج مربوط می شود. هرچه ضریب بالاتر
-برود، مبلغ بازگشتی بالقوه بیشتر می شود، اما همزمان خطر پایان
-راند پیش از برداشت نیز وجود دارد.
-</p>
-
-<div class="hero-actions">
+<div class="site-width header-main">
 
 <a
-    class="button"
+    class="site-name"
+    href="/">
+سایت شرط بندی
+</a>
+
+<div
+    class="header-actions"
+    data-nosnippet>
+
+<a
+    class="small-button"
+    href="#calculator">
+محاسبه گر
+</a>
+
+<a
+    class="small-button primary"
     href="https://yektab.com.es/login/index.php"
     target="_blank"
     rel="nofollow sponsored noopener"
@@ -191,33 +207,203 @@ Provably Fair
 ورود به سایت
 </a>
 
-<a
-    class="button app"
-    href="https://sibappdl.xyz/sibbet-app.apk?v6"
-    target="_blank"
-    rel="nofollow sponsored noopener"
-    referrerpolicy="origin-when-cross-origin">
-دانلود اپلیکیشن
-</a>
-
-<a
-    class="button secondary"
-    href="#training">
-آموزش بازی
-</a>
-
 </div>
 
 </div>
 
-<div class="hero-media">
+<nav
+    class="site-nav"
+    aria-label="فهرست راهنما">
+
+<div class="site-width nav-inner">
+
+<a href="#what">
+بازی انفجار چیست
+</a>
+
+<a href="#how">
+نحوه بازی
+</a>
+
+<a href="#calculator">
+محاسبه گر
+</a>
+
+<a href="#terms">
+اصطلاحات
+</a>
+
+<a href="#cashout">
+Cashout
+</a>
+
+<a href="#history">
+تاریخچه
+</a>
+
+<a href="#algorithm">
+الگوریتم
+</a>
+
+<a href="#fair">
+Provably Fair
+</a>
+
+<a href="#hack">
+هک و ربات
+</a>
+
+<a href="#site-check">
+انتخاب سایت
+</a>
+
+<a href="#faq">
+سوالات متداول
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<main id="main">
+
+<article>
+
+<header class="hero">
+
+<div class="article-width">
+
+<p class="hero-kicker">
+راهنمای کامل بازی انفجار
+</p>
+
+<h1>
+بازی انفجار
+</h1>
+
+<p class="hero-summary">
+از نحوه کار ضریب و Cashout تا الگوریتم، تاریخچه،
+Provably Fair و مدیریت ریسک
+</p>
+
+<p>
+بازی انفجار یک بازی ضریب محور است که هر راند آن از یک
+ضریب اولیه شروع می شود و تا نقطه پایان همان راند افزایش
+پیدا می کند. بازیکن می تواند پیش از پایان راند Cashout
+کند؛ در غیر این صورت مبلغ همان شرط از دست می رود.
+</p>
+
+<p>
+قوانین ظاهری بازی ساده اند، اما تصمیم اصلی در هر راند
+میان خروج زودتر و انتظار برای ضریب بالاتر شکل می گیرد.
+هرچه مدت بیشتری در راند بمانید، مبلغ بازگشتی بالقوه
+افزایش پیدا می کند، ولی احتمال اینکه راند پیش از Cashout
+تمام شود نیز وجود دارد.
+</p>
+
+<div class="byline">
 
 <img
-    src="/assets/images/hero.svg"
+    src="/assets/images/soroush-amini.jpg"
+    width="42"
+    height="42"
+    alt="سروش امینی">
+
+<div>
+
+<strong>
+سروش امینی
+</strong>
+
+<div>
+نویسنده این راهنما | آخرین بازبینی 2026-10-02
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<figure class="hero-image">
+
+<img
+    src="/assets/images/crash-guide.svg"
     width="1200"
-    height="760"
-    alt="نمودار آموزشی بازی انفجار"
-    fetchpriority="high">
+    height="675"
+    alt="نمودار آموزشی رشد ضریب در بازی انفجار و محل Cashout و Crash"
+    fetchpriority="high"
+    decoding="async">
+
+<figcaption>
+نمای آموزشی سازوکار کلی یک Crash Game
+</figcaption>
+
+</figure>
+
+</header>
+
+<section
+    class="quick-nav"
+    aria-label="دسترسی سریع">
+
+<div class="article-width">
+
+<strong>
+در این راهنما
+</strong>
+
+<div class="quick-links">
+
+<a href="#what">
+بازی انفجار چیست
+</a>
+
+<a href="#how">
+آموزش قدم به قدم
+</a>
+
+<a href="#calculator">
+محاسبه سود و زیان
+</a>
+
+<a href="#terms">
+اصطلاحات بازی
+</a>
+
+<a href="#cashout">
+Cashout دستی و خودکار
+</a>
+
+<a href="#history">
+تاریخچه ضرایب
+</a>
+
+<a href="#algorithm">
+الگوریتم بازی
+</a>
+
+<a href="#fair">
+بررسی Provably Fair
+</a>
+
+<a href="#hack">
+ربات و هک انفجار
+</a>
+
+<a href="#bankroll">
+مدیریت سرمایه
+</a>
+
+<a href="#site-check">
+بررسی سایت و دامنه
+</a>
+
+<a href="#author">
+درباره نویسنده
+</a>
 
 </div>
 
@@ -225,137 +411,93 @@ Provably Fair
 
 </section>
 
-<section id="what" class="alt">
+<div class="article-width article-body">
 
-<div class="container reading">
+<section id="what">
 
 <h2>
 بازی شرط بندی انفجار چیست و چگونه کار می کند
 </h2>
 
-<div class="gradient-line"></div>
+<div class="summary-box">
 
 <p>
-وقتی وارد بازی انفجار می شوید، ابتدا مبلغ شرط را تعیین می کنید.
-با شروع بازی نموداری را می بینید که ضریب معمولاً از 1.00x شروع
-به افزایش می کند. نقطه پایان هر راند می تواند بسیار زود اتفاق
-بیفتد یا ضریب برای مدت بیشتری افزایش پیدا کند.
-</p>
-
-<p>
-کار بازیکن این است که پیش از پایان راند روی برداشت یا Cashout
-بزند. اگر برداشت با موفقیت ثبت شود، مبلغ بازگشتی بر اساس مبلغ
-شرط و ضریب خروج محاسبه می شود. اگر راند پیش از برداشت پایان
-پیدا کند، مبلغ همان شرط از دست می رود.
-</p>
-
-<div class="example">
-
 <strong>
-مثال
+خلاصه
 </strong>
+</p>
 
 <p>
-اگر مبلغ شرط 100 هزار تومان باشد و برداشت در ضریب 6.00x با
-موفقیت انجام شود، مبلغ بازگشتی 600 هزار تومان خواهد بود.
-این مثال فقط روش محاسبه پرداخت را نشان می دهد و به معنی
-احتمال رسیدن بازی به ضریب 6 نیست.
+در هر راند یک ضریب از حدود 1.00x شروع به افزایش می کند.
+اگر بازیکن پیش از پایان راند Cashout کند، مبلغ بازگشتی
+بر اساس مبلغ شرط و ضریب خروج محاسبه می شود. اگر Crash
+زودتر رخ دهد، مبلغ همان شرط از دست می رود.
 </p>
 
 </div>
 
-</div>
-
-</section>
-
-<section>
-
-<div class="container reading">
-
-<h2>
-مفهوم ضریب و نمودار در بازی انفجار آنلاین
-</h2>
-
-<div class="gradient-line"></div>
-
 <p>
-هسته بازی انفجار رشد ضریب در طول راند است. هرچه ضریب
-بالاتر رود، مبلغ بازگشتی بالقوه نیز بیشتر می شود. در مقابل،
-منتظر ماندن برای ضریب بالاتر به معنی باقی ماندن در راند برای
-مدت بیشتری است و امکان پایان بازی پیش از Cashout وجود دارد.
+برخلاف بازی هایی که چندین کارت، مهره یا انتخاب همزمان
+دارند، بازی انفجار از نظر رابط کاربری ساده است. مهم ترین
+اطلاعات روی صفحه معمولاً مبلغ شرط، ضریب زنده، تاریخچه
+راندها و دکمه برداشت است.
 </p>
 
 <p>
-همین تضاد میان خروج زودتر و انتظار برای ضریب بالاتر بخش
-مهمی از هیجان بازی را ایجاد می کند. با این حال، بزرگ بودن
-ضریب نمایش داده شده نباید با احتمال بالای دریافت آن اشتباه
-گرفته شود.
-</p>
-
-</div>
-
-</section>
-
-<section class="alt">
-
-<div class="container reading">
-
-<h2>
-آیا امکان هک بازی انفجار وجود دارد
-</h2>
-
-<div class="gradient-line"></div>
-
-<p>
-یکی از ادعاهای رایج در شبکه های اجتماعی فروش ربات انفجار،
-نرم افزار تشخیص ضریب یا روش هک بازی است. چنین ادعاهایی باید
-با احتیاط بسیار زیاد بررسی شوند.
+سادگی رابط به معنی قابل پیش بینی بودن نتیجه نیست. زمان
+پایان راند بر اساس سازوکار همان بازی تعیین می شود و باید
+قوانین و مستندات ارائه دهنده همان نسخه را بررسی کرد.
 </p>
 
 <p>
-در یک سیستم تصادفی یا Provably Fair که درست پیاده سازی شده
-باشد، مشاهده چند نتیجه قبلی به تنهایی اطلاعات لازم برای
-پیش بینی قطعی نتیجه آینده را فراهم نمی کند.
+برای نمونه اگر 100 هزار تومان شرط ثبت شود و Cashout در
+2.10x با موفقیت انجام شود، مبلغ بازگشتی 210 هزار تومان
+خواهد بود. از این مبلغ، 100 هزار تومان اصل مبلغ شرط است
+و 110 هزار تومان تفاوت مثبت همان راند محسوب می شود.
 </p>
 
-<div class="warning">
+<div class="note">
 
+<p>
 <strong>
-ربات پیش بینی را با ابزار Verify اشتباه نگیرید
+عدد ضریب فقط مبلغ بازگشتی بالقوه را نشان می دهد.
 </strong>
-
-<p>
-ابزاری که نتیجه یک راند انجام شده را با داده های منتشر شده
-بررسی می کند با ابزاری که ادعا می کند نتیجه آینده را می داند
-کاملاً متفاوت است.
+ضریب بزرگ تر به خودی خود به معنی احتمال بیشتر برد نیست.
 </p>
-
-</div>
 
 </div>
 
 </section>
 
-<section id="terms">
-
-<div class="container reading">
+<section id="mechanism">
 
 <h2>
-اصطلاحات بازی شرط بندی انفجار
+مفهوم ضریب و رشد نمودار در بازی انفجار
 </h2>
 
-<div class="gradient-line"></div>
+<p>
+ضریب یا Multiplier عددی است که مبلغ شرط در زمان Cashout
+در آن ضرب می شود. در یک نمایش معمولی، ضریب از مقدار نزدیک
+به 1.00x شروع می شود و با ادامه راند افزایش پیدا می کند.
+</p>
 
-<div class="table-wrap">
+<p>
+اگر بازیکن در 1.50x خارج شود، مبلغ بازگشتی برابر یک و نیم
+برابر مبلغ شرط است. در 2.00x مبلغ بازگشتی دو برابر و در
+5.00x پنج برابر مبلغ اولیه همان شرط خواهد بود.
+</p>
+
+<div class="table-scroll">
 
 <table>
 
 <thead>
 
 <tr>
-<th>اصطلاح</th>
-<th>تعریف ساده</th>
-<th>کاربرد</th>
+<th>مبلغ شرط</th>
+<th>ضریب Cashout</th>
+<th>مبلغ بازگشتی</th>
+<th>تفاوت نسبت به شرط</th>
 </tr>
 
 </thead>
@@ -363,57 +505,31 @@ Provably Fair
 <tbody>
 
 <tr>
-<td><strong>ضریب</strong></td>
-<td>عددی که معمولاً از 1.00x شروع به افزایش می کند</td>
-<td>مبلغ بازگشتی بالقوه را تعیین می کند</td>
+<td>100,000 تومان</td>
+<td>1.20x</td>
+<td>120,000 تومان</td>
+<td>+20,000 تومان</td>
 </tr>
 
 <tr>
-<td><strong>Crash</strong></td>
-<td>لحظه پایان راند</td>
-<td>اگر Cashout قبل از آن ثبت نشده باشد شرط از دست می رود</td>
+<td>100,000 تومان</td>
+<td>1.50x</td>
+<td>150,000 تومان</td>
+<td>+50,000 تومان</td>
 </tr>
 
 <tr>
-<td><strong>Cashout</strong></td>
-<td>ثبت خروج از راند</td>
-<td>مبلغ بازگشتی را در ضریب همان خروج نهایی می کند</td>
+<td>100,000 تومان</td>
+<td>2.10x</td>
+<td>210,000 تومان</td>
+<td>+110,000 تومان</td>
 </tr>
 
 <tr>
-<td><strong>Auto Cashout</strong></td>
-<td>تعیین ضریب خروج از قبل</td>
-<td>در صورت رسیدن بازی به ضریب تعیین شده برداشت اجرا می شود</td>
-</tr>
-
-<tr>
-<td><strong>History</strong></td>
-<td>نمایش نتایج راندهای قبلی</td>
-<td>برای مشاهده اتفاقات گذشته استفاده می شود نه پیش بینی قطعی آینده</td>
-</tr>
-
-<tr>
-<td><strong>Hash</strong></td>
-<td>خروجی یک تابع رمزنگاری</td>
-<td>در بعضی طراحی های Provably Fair برای راستی آزمایی استفاده می شود</td>
-</tr>
-
-<tr>
-<td><strong>Bankroll</strong></td>
-<td>بودجه اختصاص داده شده برای بازی</td>
-<td>برای مدیریت مبلغ و محدودیت زیان کاربرد دارد</td>
-</tr>
-
-<tr>
-<td><strong>Martingale</strong></td>
-<td>افزایش مبلغ پس از باخت</td>
-<td>ریسک رشد سریع مبلغ و زیان دارد و برد را تضمین نمی کند</td>
-</tr>
-
-<tr>
-<td><strong>Bonus</strong></td>
-<td>اعتبار تبلیغاتی ارائه دهنده</td>
-<td>شرایط گردش و برداشت آن باید قبل از استفاده بررسی شود</td>
+<td>100,000 تومان</td>
+<td>5.00x</td>
+<td>500,000 تومان</td>
+<td>+400,000 تومان</td>
 </tr>
 
 </tbody>
@@ -422,25 +538,18 @@ Provably Fair
 
 </div>
 
-</div>
+<p>
+جدول بالا تنها نحوه محاسبه پرداخت را توضیح می دهد و درباره
+احتمال رسیدن یک راند به هر ضریب چیزی نمی گوید.
+</p>
 
 </section>
 
-<section id="training" class="alt">
-
-<div class="container reading">
+<section id="how">
 
 <h2>
 آموزش بازی انفجار قدم به قدم
 </h2>
-
-<div class="gradient-line"></div>
-
-<p>
-برای مثال فرض کنید بودجه ای که برای بازی در نظر گرفته شده
-یک میلیون تومان است. مثال های زیر فقط برای توضیح سازوکار
-بازی هستند.
-</p>
 
 <div class="steps">
 
@@ -451,8 +560,10 @@ Provably Fair
 </h3>
 
 <p>
-فرض کنید برای یک راند مبلغ 100 هزار تومان انتخاب می شود.
-این مبلغ پیش از شروع راند در بخش شرط ثبت می شود.
+پیش از شروع راند مبلغی که قرار است در همان دست در معرض
+ریسک قرار بگیرد وارد می شود. بهتر است این مبلغ از بودجه
+کلی جدا در نظر گرفته شود تا مشخص باشد هر راند چه درصدی
+از سرمایه را درگیر می کند.
 </p>
 
 </div>
@@ -460,17 +571,13 @@ Provably Fair
 <div class="step">
 
 <h3>
-انتخاب Cashout دستی یا خودکار
+انتخاب روش خروج
 </h3>
 
 <p>
-در حالت دستی، بازیکن هنگام اجرای بازی دکمه برداشت را می زند.
-در حالت خودکار، یک ضریب هدف از قبل تعیین می شود.
-</p>
-
-<p>
-Auto Cashout نتیجه بازی را تغییر نمی دهد و صرفاً اجرای
-برداشت در ضریب از پیش تعیین شده را خودکار می کند.
+بسته به نسخه بازی، Cashout می تواند دستی یا خودکار باشد.
+در حالت دستی خود بازیکن دکمه برداشت را می زند. در حالت
+Auto Cashout ضریب هدف از قبل تعیین می شود.
 </p>
 
 </div>
@@ -478,320 +585,999 @@ Auto Cashout نتیجه بازی را تغییر نمی دهد و صرفاً ا�
 <div class="step">
 
 <h3>
-شروع افزایش ضریب
+شروع راند
 </h3>
 
 <p>
-با شروع راند، ضریب افزایش پیدا می کند. اگر مبلغ اولیه
-100 هزار تومان باشد، ارزش بازگشتی بالقوه در چند ضریب
-نمونه به شکل زیر است.
+ضریب از مقدار اولیه شروع به افزایش می کند. تا زمانی که
+Crash اتفاق نیفتاده باشد، بازیکن در صورت پشتیبانی پلتفرم
+می تواند درخواست Cashout را ثبت کند.
 </p>
 
-<div class="table-wrap">
+</div>
+
+<div class="step">
+
+<h3>
+Cashout یا Crash
+</h3>
+
+<p>
+اگر برداشت پیش از نقطه پایان راند ثبت شود، بازگشت بر اساس
+ضریب خروج محاسبه می شود. اگر راند ابتدا پایان پیدا کند،
+مبلغ همان شرط بازگشتی ندارد.
+</p>
+
+</div>
+
+</div>
+
+<figure class="article-image">
+
+<img
+    src="/assets/images/cashout-guide.svg"
+    width="1200"
+    height="620"
+    loading="lazy"
+    decoding="async"
+    alt="مقایسه Cashout موفق با حالتی که Crash زودتر رخ می دهد">
+
+<figcaption>
+دو سناریوی ساده برای درک تفاوت Cashout و Crash
+</figcaption>
+
+</figure>
+
+<div class="example-grid">
+
+<div class="example-card win">
+
+<h3>
+سناریوی Cashout
+</h3>
+
+<p>
+شرط 100 هزار تومان است. بازیکن در 2.10x خارج می شود و
+راند بعد از آن در 2.30x پایان پیدا می کند.
+</p>
+
+<p>
+<strong>
+بازگشت نمونه: 210 هزار تومان
+</strong>
+</p>
+
+</div>
+
+<div class="example-card loss">
+
+<h3>
+سناریوی Crash
+</h3>
+
+<p>
+شرط 100 هزار تومان است. هدف بازیکن 3.00x است، اما راند
+در 2.30x پایان پیدا می کند.
+</p>
+
+<p>
+<strong>
+بازگشت آن شرط: صفر
+</strong>
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="calculator">
+
+<h2>
+محاسبه گر بازی انفجار
+</h2>
+
+<p>
+با ابزار زیر می توانید یک سناریوی فرضی را بررسی کنید.
+این محاسبه گر فقط ریاضیات مبلغ شرط و Cashout را انجام
+می دهد و نتیجه راند آینده را پیش بینی نمی کند.
+</p>
+
+<form
+    class="tool"
+    id="crashCalculator">
+
+<div class="tool-header">
+
+<h3>
+محاسبه بازگشت و درصد سرمایه درگیر
+</h3>
+
+<p>
+مقادیر نمونه را تغییر دهید تا نتیجه همان سناریو محاسبه شود.
+</p>
+
+</div>
+
+<div class="tool-grid">
+
+<div class="field">
+
+<label for="bankroll">
+کل بودجه
+</label>
+
+<input
+    id="bankroll"
+    type="number"
+    inputmode="decimal"
+    min="0"
+    step="1000"
+    value="1000000">
+
+</div>
+
+<div class="field">
+
+<label for="stake">
+مبلغ شرط
+</label>
+
+<input
+    id="stake"
+    type="number"
+    inputmode="decimal"
+    min="1"
+    step="1000"
+    value="100000">
+
+</div>
+
+<div class="field">
+
+<label for="cashout">
+ضریب Cashout
+</label>
+
+<input
+    id="cashout"
+    type="number"
+    inputmode="decimal"
+    min="1"
+    step="0.01"
+    value="2.10">
+
+</div>
+
+<div class="field">
+
+<label for="crash">
+ضریب Crash فرضی
+</label>
+
+<input
+    id="crash"
+    type="number"
+    inputmode="decimal"
+    min="1"
+    step="0.01"
+    value="2.30">
+
+</div>
+
+</div>
+
+<button
+    class="calculate"
+    type="submit">
+محاسبه
+</button>
+
+<div
+    class="tool-results"
+    aria-live="polite">
+
+<div class="result">
+
+<span class="result-label">
+مبلغ بازگشتی
+</span>
+
+<span
+    class="result-value"
+    id="returnValue">
+—
+</span>
+
+</div>
+
+<div class="result">
+
+<span class="result-label">
+سود یا زیان همان راند
+</span>
+
+<span
+    class="result-value"
+    id="profitValue">
+—
+</span>
+
+</div>
+
+<div class="result">
+
+<span class="result-label">
+درصد بودجه درگیر
+</span>
+
+<span
+    class="result-value"
+    id="riskValue">
+—
+</span>
+
+</div>
+
+</div>
+
+<p
+    class="tool-message"
+    id="toolMessage">
+</p>
+
+</form>
+
+</section>
+
+<section id="terms">
+
+<h2>
+اصطلاحات بازی انفجار
+</h2>
+
+<div class="table-scroll">
 
 <table>
 
 <thead>
+
 <tr>
-<th>ضریب</th>
-<th>مبلغ بازگشتی نمونه</th>
+<th>اصطلاح</th>
+<th>تعریف ساده</th>
+<th>نکته مهم</th>
 </tr>
+
 </thead>
 
 <tbody>
-<tr><td>1.20x</td><td>120 هزار تومان</td></tr>
-<tr><td>1.50x</td><td>150 هزار تومان</td></tr>
-<tr><td>1.80x</td><td>180 هزار تومان</td></tr>
-<tr><td>2.10x</td><td>210 هزار تومان</td></tr>
+
+<tr>
+<td>
+<strong>Multiplier</strong>
+</td>
+<td>
+ضریب زنده راند
+</td>
+<td>
+مبلغ بازگشتی در Cashout بر اساس آن محاسبه می شود
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>Crash</strong>
+</td>
+<td>
+نقطه پایان راند
+</td>
+<td>
+بعد از آن Cashout همان راند امکان پذیر نیست
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>Cashout</strong>
+</td>
+<td>
+ثبت خروج از راند
+</td>
+<td>
+باید پیش از Crash با موفقیت ثبت شود
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>Auto Cashout</strong>
+</td>
+<td>
+ضریب خروج از پیش تعیین شده
+</td>
+<td>
+پیش بینی کننده نتیجه نیست
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>History</strong>
+</td>
+<td>
+فهرست نتایج راندهای قبلی
+</td>
+<td>
+برای مشاهده گذشته است نه اثبات نتیجه آینده
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>Server Seed</strong>
+</td>
+<td>
+یکی از ورودی های احتمالی سیستم های Provably Fair
+</td>
+<td>
+نحوه استفاده به طراحی همان بازی بستگی دارد
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>Client Seed</strong>
+</td>
+<td>
+یک ورودی سمت کاربر در بعضی پیاده سازی ها
+</td>
+<td>
+در همه بازی ها ساختار یکسانی ندارد
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>Nonce</strong>
+</td>
+<td>
+مقدار یا شمارنده برای تفکیک راندها
+</td>
+<td>
+جزئیات آن باید در مستندات بازی بررسی شود
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>Hash</strong>
+</td>
+<td>
+خروجی یک تابع رمزنگاری یک طرفه
+</td>
+<td>
+می تواند در سازوکار Commit و Verify استفاده شود
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>Bankroll</strong>
+</td>
+<td>
+بودجه ای که برای بازی کنار گذاشته شده
+</td>
+<td>
+برای سنجش اندازه هر شرط نسبت به کل بودجه کاربرد دارد
+</td>
+</tr>
+
+<tr>
+<td>
+<strong>Martingale</strong>
+</td>
+<td>
+افزایش مبلغ شرط بعد از باخت
+</td>
+<td>
+می تواند اندازه شرط را خیلی سریع افزایش دهد
+</td>
+</tr>
+
 </tbody>
 
 </table>
 
 </div>
 
-</div>
+</section>
 
-<div class="step">
+<section id="cashout">
+
+<h2>
+Cashout دستی و Cashout خودکار
+</h2>
 
 <h3>
-نتیجه راند
+Cashout دستی
 </h3>
 
 <p>
-اگر Cashout روی 2.10x با موفقیت ثبت شود، 100 هزار تومان
-در 2.10 ضرب می شود و مبلغ بازگشتی 210 هزار تومان خواهد بود.
+در حالت دستی، بازیکن در زمان مورد نظر خودش درخواست برداشت
+را ثبت می کند. مزیت اصلی این حالت کنترل مستقیم روی تصمیم
+خروج است، اما اجرای آن به واکنش کاربر و عملکرد فنی پلتفرم
+وابسته است.
 </p>
 
-<p>
-اگر بازیکن منتظر 3.00x بماند اما راند در 2.30x پایان پیدا
-کند، چون برداشت ثبت نشده است مبلغ همان شرط از دست می رود.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container reading">
-
-<h2>
-Cashout دستی
-</h2>
-
-<div class="gradient-line"></div>
+<h3>
+Auto Cashout
+</h3>
 
 <p>
-در حالت دستی خود بازیکن زمان برداشت را انتخاب می کند.
-این روش کنترل لحظه ای بیشتری می دهد اما نیازمند توجه به
-راند و عملکرد مناسب اتصال اینترنت و مرورگر است.
-</p>
-
-<h2>
-Cashout خودکار
-</h2>
-
-<p>
-در حالت خودکار یک ضریب هدف از قبل تعیین می شود. اگر بازی
-به آن ضریب برسد، سیستم طبق قوانین همان ارائه دهنده برداشت
-را اجرا می کند.
-</p>
-
-<p>
-این قابلیت یک ابزار اجرایی است و نباید با سیستم پیش بینی
-نتیجه اشتباه گرفته شود.
-</p>
-
-</div>
-
-</section>
-
-<section id="history" class="alt">
-
-<div class="container reading">
-
-<h2>
-تاریخچه در بازی انفجار چیست
-</h2>
-
-<div class="gradient-line"></div>
-
-<p>
-بخش History معمولاً نتایج راندهای قبلی را نمایش می دهد.
-ممکن است اطلاعاتی مثل ضریب پایان راند، مبلغ شرط، ضریب
-Cashout و نتیجه هر دست در آن دیده شود.
-</p>
-
-<p>
-در بعضی پیاده سازی های Provably Fair داده های رمزنگاری
-مرتبط با راند نیز ارائه می شوند. اما روش دقیق این داده ها
-بین ارائه دهندگان متفاوت است و نباید فرض کرد تمام بازی های
-انفجار از MD5 یا یک فرمول واحد استفاده می کنند.
+Auto Cashout اجازه می دهد یک ضریب خروج پیش از شروع یا در
+زمان مجاز تعیین شود. اگر راند به آن ضریب برسد، پلتفرم طبق
+قواعد خودش درخواست برداشت را اجرا می کند.
 </p>
 
 <div class="note">
 
-<strong>
-تاریخچه ابزار پیش بینی قطعی نیست
-</strong>
-
 <p>
-اینکه چند راند قبلی در ضرایب پایین پایان یافته اند اثبات
-نمی کند که راند بعدی باید ضریب بالایی داشته باشد.
+Auto Cashout احتمال Crash را تغییر نمی دهد و راهی برای
+پیش بینی ضریب بعدی نیست. همچنین نحوه اجرای آن هنگام مشکل
+اینترنت یا ارتباط کاربر باید از مستندات همان پلتفرم بررسی
+شود.
 </p>
 
 </div>
 
+</section>
 
-<figure class="content-image">
+<section id="history">
 
-<img
-    src="/assets/images/crash-game.webp"
-    width="800"
-    height="515"
-    loading="lazy"
-    decoding="async"
-    alt="نمونه رابط و نمودار بازی انفجار">
+<h2>
+تاریخچه بازی انفجار چه کاربردی دارد
+</h2>
 
-<figcaption>
-تصویر محلی شده برای توضیح رابط بازی انفجار
-</figcaption>
+<p>
+History معمولاً ضرایب پایان راندهای قبلی را نشان می دهد.
+بعضی نسخه ها اطلاعات بیشتری مثل مبلغ شرط، ضریب Cashout یا
+داده های لازم برای بررسی Provably Fair را نیز نمایش می دهند.
+</p>
 
-</figure>
+<p>
+تاریخچه برای بازبینی اتفاقات گذشته مفید است، اما یک اشتباه
+رایج این است که توالی چند ضریب قبلی به عنوان الگوی قطعی برای
+راند بعد تفسیر شود.
+</p>
 
+<div class="warning">
+
+<p>
+اینکه چند راند پشت سر هم در ضرایب پایین تمام شده اند،
+به تنهایی اثبات نمی کند که راند بعد باید ضریب بالایی داشته
+باشد.
+</p>
 
 </div>
+
+</section>
+
+<section id="algorithm">
+
+<h2>
+الگوریتم بازی انفجار چگونه کار می کند
+</h2>
+
+<p>
+برای تمام بازی های انفجار یک الگوریتم واحد وجود ندارد.
+بازی های مختلف می توانند توسط ارائه دهندگان متفاوت ساخته
+شوند و روش تولید نتیجه، میزان House Edge، داده های
+Provably Fair و نحوه نمایش نتیجه در آنها یکسان نباشد.
+</p>
+
+<p>
+در بعضی سیستم ها، پیش از راند یک تعهد رمزنگاری منتشر
+می شود و پس از راند داده های لازم برای بررسی آن در دسترس
+قرار می گیرد. در بعضی پیاده سازی ها Server Seed،
+Client Seed و Nonce در محاسبات استفاده می شوند.
+</p>
+
+<p>
+به همین دلیل نسبت دادن یک فرمول MD5 ثابت یا یک روش Hash
+مشترک به تمام سایت های بازی انفجار دقیق نیست. برای بررسی
+یک نسخه باید الگوریتم همان ارائه دهنده مطالعه شود.
+</p>
 
 </section>
 
 <section id="fair">
 
-<div class="container reading">
-
 <h2>
-چگونه عادلانه بودن بازی انفجار را بررسی کنیم
+Provably Fair چیست و چطور بررسی می شود
 </h2>
 
-<div class="gradient-line"></div>
-
 <p>
-در یک سیستم Provably Fair مناسب، هدف این است که کاربر
-بتواند پس از انجام راند بررسی کند داده منتشر شده با نتیجه
-همخوانی دارد یا خیر.
+Provably Fair اصطلاحی برای سازوکاری است که هدف آن فراهم
+کردن امکان راستی آزمایی نتیجه است. در یک طراحی مناسب،
+کاربر باید بتواند با داده ها و الگوریتم اعلام شده بررسی کند
+نتیجه راند با اطلاعات تعهد شده سازگار بوده است یا خیر.
 </p>
 
-<p>
-روش دقیق می تواند شامل Server Seed، Client Seed، Nonce،
-Hash یا سازوکارهای دیگر باشد. بنابراین یک ادعای کلی مثل
-اینکه تمام بازی های انفجار از تبدیل Hash به MD5 استفاده
-می کنند دقیق نیست.
-</p>
+<figure class="article-image">
+
+<img
+    src="/assets/images/provably-fair.svg"
+    width="1200"
+    height="650"
+    loading="lazy"
+    decoding="async"
+    alt="نمای سه مرحله ای Commit راند و Verify در یک سیستم Provably Fair">
+
+<figcaption>
+نمای مفهومی Commit و Result و Verify
+</figcaption>
+
+</figure>
+
+<h3>
+چک لیست بررسی
+</h3>
+
+<ul class="check-list">
+
+<li>
+آیا ارائه دهنده روش Verify را توضیح داده است
+</li>
+
+<li>
+آیا داده های لازم برای بررسی نتیجه در دسترس هستند
+</li>
+
+<li>
+آیا می توان الگوریتم را مستقل از رابط بازی اجرا یا بررسی کرد
+</li>
+
+<li>
+آیا داده تعهد شده قبل از راند با داده افشا شده بعد از راند
+قابل تطبیق است
+</li>
+
+<li>
+آیا توضیح روشن و قابل تکراری برای تبدیل داده ها به نتیجه
+وجود دارد
+</li>
+
+</ul>
+
+<div class="good">
 
 <p>
-برای بررسی یک بازی خاص باید مستندات همان ارائه دهنده را
-مطالعه کرد و دید آیا الگوریتم Verify، داده های ورودی و
-روش بازتولید نتیجه واقعاً منتشر شده اند یا خیر.
-</p>
-
-<div class="answer">
-
 <strong>
-یک سیستم قابل بررسی باید روش Verify مشخص داشته باشد
+Provably Fair با پیش بینی متفاوت است.
 </strong>
-
-<p>
-صرف نمایش یک رشته Hash یا نوشتن عبارت Provably Fair
-روی صفحه برای اثبات شفافیت کافی نیست.
+ممکن است یک نتیجه بعد از پایان راند قابل راستی آزمایی باشد،
+بدون اینکه نتیجه راند بعدی از قبل برای بازیکن قابل مشاهده باشد.
 </p>
-
-</div>
 
 </div>
 
 </section>
 
-<section id="sites" class="alt">
-
-<div class="container">
-
-<div class="reading">
+<section id="hack">
 
 <h2>
-سایت های شناخته شده در جستجوهای بازی انفجار
+آیا هک یا ربات پیش بینی بازی انفجار واقعی است
 </h2>
 
-<div class="gradient-line"></div>
+<p>
+عبارت هایی مثل ربات بازی انفجار، هک ضریب یا نرم افزار
+تشخیص ضریب در اینترنت زیاد دیده می شوند. برای ارزیابی این
+ادعاها باید بین دو قابلیت کاملاً متفاوت فرق گذاشت:
+راستی آزمایی یک نتیجه انجام شده و پیش بینی نتیجه آینده.
+</p>
 
 <p>
-کاربران هنگام جستجوی بازی انفجار با نام های مختلفی روبه رو
-می شوند. اطلاعات بونوس، حداقل واریز، زمان برداشت و شرایط
-هر سرویس ممکن است تغییر کند؛ بنابراین این موارد باید هنگام
-استفاده از منبع رسمی همان سرویس دوباره بررسی شوند.
+اینکه یک ابزار بتواند با داده های افشا شده بعد از راند
+نتیجه را دوباره محاسبه کند، نشان نمی دهد که همان ابزار قبل
+از راند نیز به نتیجه دسترسی داشته است.
+</p>
+
+<div class="warning">
+
+<p>
+اگر یک سرویس ادعا می کند ضریب آینده را قطعی می داند،
+نمایش چند اسکرین شات برد، کانال خصوصی یا نمودار نتایج قبلی
+به تنهایی مدرک فنی این ادعا نیست.
 </p>
 
 </div>
 
-<div class="site-list">
+<h3>
+برای بررسی یک ادعا چه بخواهیم
+</h3>
 
-<article class="site-card">
+<ul>
+
+<li>
+روش فنی قابل توضیح و قابل آزمایش
+</li>
+
+<li>
+آزمایش از پیش ثبت شده به جای انتخاب نمونه های موفق بعد از رخداد
+</li>
+
+<li>
+امکان تکرار نتیجه توسط فرد مستقل
+</li>
+
+<li>
+تفکیک واضح Verify نتیجه گذشته از Prediction نتیجه آینده
+</li>
+
+</ul>
+
+</section>
+
+<section id="bankroll">
+
+<h2>
+مدیریت سرمایه در بازی انفجار
+</h2>
+
+<p>
+مدیریت سرمایه نمی تواند نتیجه تصادفی بازی را تغییر دهد،
+اما مشخص می کند چه مقدار از بودجه در هر راند در معرض ریسک
+قرار می گیرد.
+</p>
+
+<p>
+برای مثال اگر موجودی یک میلیون تومان باشد و مبلغ هر شرط
+100 هزار تومان تعیین شود، 10 درصد کل بودجه در یک راند
+درگیر می شود. اگر مبلغ هر شرط 20 هزار تومان باشد، این عدد
+2 درصد است.
+</p>
 
 <h3>
-وان ایکس بت
+مارتینگل و رشد سریع مبلغ شرط
 </h3>
 
 <p>
-یک برند بین المللی در حوزه شرط بندی ورزشی و بازی های
-آنلاین است. شرایط واریز، برداشت، بونوس و دسترسی می تواند
-بر اساس منطقه و زمان متفاوت باشد.
+در روش Martingale مبلغ شرط بعد از هر باخت افزایش پیدا
+می کند. این روش ممکن است در چند مرحله مبلغ مورد نیاز را
+به سرعت بزرگ کند و با محدودیت موجودی یا سقف شرط برخورد
+کند.
 </p>
 
-</article>
+<div class="table-scroll">
 
-<article class="site-card">
+<table>
+
+<thead>
+
+<tr>
+<th>مرحله</th>
+<th>مبلغ فرضی</th>
+<th>مجموع سرمایه درگیر تا آن مرحله</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>1</td>
+<td>10,000</td>
+<td>10,000</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>20,000</td>
+<td>30,000</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>40,000</td>
+<td>70,000</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>80,000</td>
+<td>150,000</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>160,000</td>
+<td>310,000</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>320,000</td>
+<td>630,000</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<p>
+این مثال نشان می دهد افزایش متوالی مبلغ چگونه می تواند
+حتی با شروع از عدد کوچک، خیلی سریع بخش بزرگی از بودجه را
+درگیر کند.
+</p>
+
+</section>
+
+<section id="site-check">
+
+<h2>
+چطور سایت بازی انفجار را بررسی کنیم
+</h2>
+
+<p>
+قبل از ورود اطلاعات حساب یا انجام پرداخت، بهتر است خود
+پلتفرم جدا از ظاهر بازی بررسی شود. ظاهر حرفه ای، HTTPS یا
+استفاده از نام یک برند به تنهایی اعتبار یک دامنه را ثابت
+نمی کند.
+</p>
+
+<ul class="check-list">
+
+<li>
+املای کامل دامنه و پسوند آن را بررسی کنید
+</li>
+
+<li>
+دقت کنید دامنه مشابه یا تغییر جزئی در حروف وجود نداشته باشد
+</li>
+
+<li>
+HTTPS را بررسی کنید اما آن را معادل اعتبار تجاری ندانید
+</li>
+
+<li>
+قوانین و شرایط واریز و برداشت را پیش از پرداخت بخوانید
+</li>
+
+<li>
+اگر مجوزی ادعا شده، آن را از مرجع صادر کننده بررسی کنید
+</li>
+
+<li>
+قوانین بونوس و محدودیت برداشت را جداگانه بررسی کنید
+</li>
+
+<li>
+از وارد کردن رمز یا اطلاعات مالی در دامنه های ناشناس خودداری کنید
+</li>
+
+</ul>
 
 <h3>
-Betforward
+بازی انفجار بدون فیلتر
 </h3>
 
 <p>
-نام دیگری است که در جستجوهای فارسی مربوط به شرط بندی
-ورزشی و کازینو دیده می شود. پیش از استفاده، شرایط مالی و
-دامنه فعال باید مستقلاً بررسی شوند.
+عبارت بازی انفجار بدون فیلتر معمولاً به این معنی است که
+کاربر به دنبال دامنه یا صفحه ای می گردد که در شبکه فعلی
+او قابل دسترسی باشد. قابل دسترس بودن یک URL به تنهایی
+درباره رسمی بودن، امنیت پرداخت یا اعتبار آن نتیجه ای
+نمی دهد.
 </p>
 
-</article>
+</section>
 
-<article class="site-card">
+<section id="app">
 
-<h3>
-سیب بت
-</h3>
+<h2>
+نسخه موبایل و اپلیکیشن
+</h2>
 
 <p>
-نامی شناخته شده میان بخشی از کاربران فارسی زبان است.
-دامنه، شرایط بونوس و روش های پرداخت می توانند تغییر کنند
-و باید هنگام استفاده بررسی شوند.
+اگر از اپلیکیشن استفاده می کنید، منبع فایل نصب را بررسی
+کنید. در اندروید، نصب فایل APK خارج از فروشگاه رسمی نیازمند
+دقت بیشتری است و بهتر است مجوزهای برنامه و منبع دانلود
+پیش از نصب بررسی شوند.
 </p>
 
-<div class="action-row">
+<div
+    class="summary-box"
+    data-nosnippet>
+
+<p>
+لینک دانلود معرفی شده برای این صفحه:
+</p>
+
+<p>
 
 <a
-    class="button app"
     href="https://sibappdl.xyz/sibbet-app.apk?v6"
     target="_blank"
     rel="nofollow sponsored noopener"
     referrerpolicy="origin-when-cross-origin">
-دانلود اپ سیب بت
+دانلود اپلیکیشن
 </a>
 
-</div>
-
-</article>
-
-<article class="site-card">
-
-<h3>
-Melbet
-</h3>
-
-<p>
-یک نام بین المللی دیگر در حوزه پیش بینی ورزشی و بازی های
-کازینویی است. اطلاعات جاری بونوس، پرداخت و دسترسی باید از
-منبع مربوط به همان سرویس بررسی شوند.
 </p>
-
-</article>
-
-</div>
 
 </div>
 
 </section>
 
-<section class="alt">
-
-<div class="container reading">
-
-<div class="cta">
+<section id="faq" class="faq">
 
 <h2>
-ورود و دسترسی
+سوالات متداول بازی انفجار
+</h2>
+
+<details>
+
+<summary>
+آیا از روی تاریخچه می توان ضریب بعدی را فهمید
+</summary>
+
+<p>
+صرف مشاهده راندهای قبلی برای پیش بینی قطعی نتیجه بعدی
+کافی نیست. روش تولید نتیجه به الگوریتم همان بازی بستگی دارد.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Cashout خودکار احتمال برد را بیشتر می کند
+</summary>
+
+<p>
+خیر. Auto Cashout فقط اجرای خروج در یک ضریب تعیین شده را
+خودکار می کند و نتیجه راند را تغییر نمی دهد.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+Provably Fair یعنی بازی قابل پیش بینی است
+</summary>
+
+<p>
+خیر. هدف Provably Fair فراهم کردن امکان بررسی نتیجه با
+روش اعلام شده است. راستی آزمایی نتیجه با دانستن نتیجه آینده
+یکسان نیست.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+آیا همه بازی های انفجار از MD5 استفاده می کنند
+</summary>
+
+<p>
+خیر. ارائه دهندگان مختلف می توانند از توابع Hash و ساختارهای
+متفاوتی استفاده کنند. روش دقیق باید از مستندات همان بازی
+بررسی شود.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+ضریب 1.00x نشانه دستکاری است
+</summary>
+
+<p>
+صرف رخ دادن یک ضریب پایین برای اثبات دستکاری کافی نیست.
+برای ارزیابی فنی باید قواعد بازی، فرمول نتیجه و در صورت وجود
+روش Verify بررسی شود.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+HTTPS یعنی سایت معتبر است
+</summary>
+
+<p>
+HTTPS ارتباط میان مرورگر و سرور را رمزنگاری می کند، اما
+به تنهایی هویت، اعتبار مالی یا کیفیت یک سرویس را ثابت
+نمی کند.
+</p>
+
+</details>
+
+</section>
+
+<section id="method" class="method">
+
+<h2>
+روش تهیه و بازبینی این راهنما
 </h2>
 
 <p>
-اگر قصد بررسی صفحه ورود معرفی شده را دارید می توانید از
-دکمه زیر استفاده کنید. قبل از وارد کردن اطلاعات شخصی یا
-انجام پرداخت، URL مقصد و شرایط سرویس را خودتان بررسی کنید.
+در این صفحه، مثال های عددی از ادعاهای مربوط به احتمال
+نتیجه جدا شده اند. هرجا سازوکار میان ارائه دهندگان می تواند
+متفاوت باشد، از نسبت دادن یک فرمول ثابت به همه بازی ها
+خودداری شده است.
 </p>
 
-<div class="action-row">
+<p>
+اعداد مربوط به بونوس، حداقل واریز، زمان برداشت یا درصدهای
+تبلیغاتی ثابت در این راهنما درج نشده اند، چون این موارد
+می توانند بر اساس سرویس، منطقه و زمان تغییر کنند.
+</p>
+
+<p>
+تاریخ آخرین بازبینی:
+<strong>2026-10-02</strong>
+</p>
+
+</section>
+
+<section
+    id="author"
+    class="author-section">
+
+<img
+    src="/assets/images/soroush-amini.jpg"
+    width="96"
+    height="96"
+    loading="lazy"
+    decoding="async"
+    alt="سروش امینی نویسنده راهنمای بازی انفجار">
+
+<div>
+
+<h2>
+سروش امینی
+</h2>
+
+<p>
+سروش امینی نویسنده این راهنماست و روی توضیح ساده سازوکار
+بازی های ضریب محور، مدیریت ریسک و بررسی ادعاهای فنی مرتبط
+با بازی های آنلاین تمرکز دارد.
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+</article>
+
+<section
+    class="cta-section"
+    data-nosnippet>
+
+<div class="article-width cta-inner">
+
+<h2>
+لینک ورود و دانلود
+</h2>
+
+<p>
+پیش از ثبت اطلاعات یا پرداخت، آدرس مقصد و شرایط سرویس را
+بررسی کنید.
+</p>
+
+<div class="cta-buttons">
 
 <a
-    class="button"
+    class="cta-primary"
     href="https://yektab.com.es/login/index.php"
     target="_blank"
     rel="nofollow sponsored noopener"
@@ -800,7 +1586,7 @@ Melbet
 </a>
 
 <a
-    class="button app"
+    class="cta-secondary"
     href="https://sibappdl.xyz/sibbet-app.apk?v6"
     target="_blank"
     rel="nofollow sponsored noopener"
@@ -810,56 +1596,9 @@ Melbet
 
 </div>
 
-</div>
-
-</div>
-
-</section>
-
-<section id="author">
-
-<div class="container reading">
-
-<h2>
-درباره نویسنده
-</h2>
-
-<div class="gradient-line"></div>
-
-<div class="author">
-
-<div class="avatar">
-س ا
-</div>
-
-<div>
-
-<h3>
-سروش امینی
-</h3>
-
-<p>
-سروش امینی نویسنده و پژوهشگر محتوای وب با تمرکز بر
-بازی های Crash، سازوکار ضرایب، Cashout، الگوریتم های
-بازی و روش های بررسی Provably Fair است.
+<p class="cta-note">
+لینک های بالا به مقصد خارجی هدایت می شوند.
 </p>
-
-<p>
-در تهیه مطالب تلاش می شود میان اطلاعات قابل بررسی،
-ادعاهای تبلیغاتی و تجربه کاربران تفاوت گذاشته شود و
-از وعده برد قطعی یا پیش بینی تضمینی نتیجه خودداری شود.
-</p>
-
-<p>
-آخرین بازبینی این راهنما
-<strong>
-${TODAY}
-</strong>
-</p>
-
-</div>
-
-</div>
 
 </div>
 
@@ -867,19 +1606,27 @@ ${TODAY}
 
 </main>
 
-<footer>
+<footer class="site-footer">
 
-<div class="container footer-inner">
+<div class="article-width footer-inner">
 
 <div>
 
+<p>
 <strong>
 سایت شرط بندی
 </strong>
+</p>
 
 <p>
-محتوای آموزشی برای کاربران بزرگسال
+راهنمای اطلاعاتی بازی انفجار برای کاربران بزرگسال
 </p>
+
+<span
+    class="adult"
+    aria-label="مخصوص افراد هجده سال به بالا">
+18+
+</span>
 
 </div>
 
@@ -893,6 +1640,11 @@ ${TODAY}
 </div>
 
 </footer>
+
+<script
+    src="/assets/js/site.js"
+    defer>
+</script>
 
 </body>
 

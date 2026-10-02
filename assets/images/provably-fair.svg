@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200"
+     height="650"
+     viewBox="0 0 1200 650"
+     role="img"
+     aria-labelledby="title desc">
+
+<title id="title">نمای ساده فرایند Provably Fair</title>
+
+<desc id="desc">
+نمای آموزشی از تعهد رمزنگاری پیش از راند و انتشار داده های لازم برای راستی آزمایی پس از راند
+</desc>
+
+<rect width="1200" height="650" fill="#f7f8fa"/>
+
+<rect
+x="70"
+y="185"
+width="285"
+height="250"
+rx="18"
+fill="#ffffff"
+stroke="#d9dee5"
+stroke-width="2"/>
+
+<rect
+x="458"
+y="185"
+width="285"
+height="250"
+rx="18"
+fill="#ffffff"
+stroke="#d9dee5"
+stroke-width="2"/>
+
+<rect
+x="845"
+y="185"
+width="285"
+height="250"
+rx="18"
+fill="#ffffff"
+stroke="#d9dee5"
+stroke-width="2"/>
+
+<circle cx="212" cy="260" r="42" fill="#e8f0fe"/>
+
+<path
+d="M195 260 h34 M212 243 v34"
+stroke="#1769aa"
+stroke-width="6"
+stroke-linecap="round"/>
+
+<text
+x="212"
+y="350"
+text-anchor="middle"
+font-family="Tahoma, Arial"
+font-size="28"
+font-weight="700"
+fill="#202124">
+قبل از راند
+</text>
+
+<text
+x="212"
+y="390"
+text-anchor="middle"
+font-family="Tahoma, Arial"
+font-size="20"
+fill="#5f6368">
+Commitment
+</text>
+
+<circle cx="600" cy="260" r="42" fill="#fef7e0"/>
+
+<path
+d="M581 260 h38"
+stroke="#b06000"
+stroke-width="6"
+stroke-linecap="round"/>
+
+<text
+x="600"
+y="350"
+text-anchor="middle"
+font-family="Tahoma, Arial"
+font-size="28"
+font-weight="700"
+fill="#202124">
+اجرای راند
+</text>
+
+<text
+x="600"
+y="390"
+text-anchor="middle"
+font-family="Tahoma, Arial"
+font-size="20"
+fill="#5f6368">
+Result
+</text>
+
+<circle cx="987" cy="260" r="42" fill="#e6f4ea"/>
+
+<path
+d="M965 261 L982 278 L1012 242"
+fill="none"
+stroke="#188038"
+stroke-width="7"
+stroke-linecap="round"
+stroke-linejoin="round"/>
+
+<text
+x="987"
+y="350"
+text-anchor="middle"
+font-family="Tahoma, Arial"
+font-size="28"
+font-weight="700"
+fill="#202124">
+بعد از راند
+</text>
+
+<text
+x="987"
+y="390"
+text-anchor="middle"
+font-family="Tahoma, Arial"
+font-size="20"
+fill="#5f6368">
+Verify
+</text>
+
+<path
+d="M370 310 H440"
+stroke="#9aa0a6"
+stroke-width="5"
+stroke-linecap="round"/>
+
+<path
+d="M757 310 H827"
+stroke="#9aa0a6"
+stroke-width="5"
+stroke-linecap="round"/>
+
+<path
+d="M430 298 L448 310 L430 322"
+fill="none"
+stroke="#9aa0a6"
+stroke-width="5"
+stroke-linecap="round"
+stroke-linejoin="round"/>
+
+<path
+d="M817 298 L835 310 L817 322"
+fill="none"
+stroke="#9aa0a6"
+stroke-width="5"
+stroke-linecap="round"
+stroke-linejoin="round"/>
+
+</svg>
