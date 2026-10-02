@@ -27,3 +27,7 @@ fa-IR
 - مدیریت سرمایه: https://enfejarbazi.github.io/#bankroll
 - بررسی سایت: https://enfejarbazi.github.io/#site-check
 - دانلود اندروید: https://enfejarbazi.github.io/#app
+- سوالات متداول: https://enfejarbazi.github.io/#faq
+
+Video:
+https://enfejarbazi.github.io/assets/videos/bazi-enfejar.mp4

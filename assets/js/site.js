@@ -17,7 +17,7 @@
     var risk = document.getElementById("risk");
     var message = document.getElementById("calcMessage");
 
-    function numberFrom(el) {
+    function getNumber(el) {
         var value = parseFloat(el.value);
         return Number.isFinite(value) ? value : 0;
     }
@@ -26,15 +26,15 @@
         return Math.round(value).toLocaleString("fa-IR") + " تومان";
     }
 
-    function updateCalculator(event) {
+    function update(event) {
         if (event) {
             event.preventDefault();
         }
 
-        var total = numberFrom(bankroll);
-        var bet = numberFrom(stake);
-        var out = numberFrom(cashout);
-        var bust = numberFrom(crash);
+        var total = getNumber(bankroll);
+        var bet = getNumber(stake);
+        var out = getNumber(cashout);
+        var bust = getNumber(crash);
 
         if (bet <= 0 || out < 1 || bust < 1) {
             returned.textContent = "—";
@@ -45,21 +45,11 @@
         }
 
         var success = out <= bust;
+        var returnedAmount = success ? bet * out : 0;
+        var profitAmount = success ? returnedAmount - bet : -bet;
+        var riskPercent = total > 0 ? (bet / total) * 100 : 0;
 
-        var returnedAmount = success
-            ? bet * out
-            : 0;
-
-        var profitAmount = success
-            ? returnedAmount - bet
-            : -bet;
-
-        var riskPercent = total > 0
-            ? (bet / total) * 100
-            : 0;
-
-        returned.textContent =
-            money(returnedAmount);
+        returned.textContent = money(returnedAmount);
 
         profit.textContent =
             (profitAmount >= 0 ? "+" : "") +
@@ -75,24 +65,13 @@
             : "تو این سناریوی فرضی، Crash زودتر از Cashout اتفاق افتاده و مبلغ همون شرط از دست می‌ره.";
     }
 
-    form.addEventListener(
-        "submit",
-        updateCalculator
-    );
+    form.addEventListener("submit", update);
 
-    [
-        bankroll,
-        stake,
-        cashout,
-        crash
-    ].forEach(function (el) {
+    [bankroll, stake, cashout, crash].forEach(function (el) {
         if (el) {
-            el.addEventListener(
-                "input",
-                updateCalculator
-            );
+            el.addEventListener("input", update);
         }
     });
 
-    updateCalculator();
+    update();
 })();
