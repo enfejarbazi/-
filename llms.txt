@@ -1,6 +1,6 @@
 # بازی انفجار
 
-> راهنمای فارسی و کاربردی بازی انفجار شامل آموزش، Multiplier، Cashout، الگوریتم، Provably Fair، History، RTP، House Edge، مدیریت سرمایه و بررسی ادعاهای ربات و هک.
+> راهنمای فارسی بازی انفجار شامل آموزش، ضریب، Cashout، الگوریتم، Provably Fair، History، RTP، House Edge، مدیریت سرمایه و بررسی ربات و هک.
 
 Main page:
 https://enfejarbazi.github.io/
@@ -8,10 +8,10 @@ https://enfejarbazi.github.io/
 Author:
 سروش امینی
 
-Primary language:
+Language:
 fa-IR
 
-## Main sections
+## Sections
 
 - بازی انفجار چیست: https://enfejarbazi.github.io/#what
 - آموزش بازی انفجار: https://enfejarbazi.github.io/#how
