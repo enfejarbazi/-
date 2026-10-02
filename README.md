@@ -1,6 +1,13 @@
 # بازی انفجار
-
-[![بازی انفجار - همین حالا شروع کنید](https://raw.githubusercontent.com/enfejarbazi/enfejarbazi.github.io/refs/heads/main/assets/images/bazi-enfejar-start-now.webp)](https://enfejarbazi.github.io/)
+<p align="center">
+  <a href="https://enfejarbazi.github.io/">
+    <img
+      src="https://raw.githubusercontent.com/enfejarbazi/enfejarbazi.github.io/refs/heads/main/assets/images/bazi-enfejar-start-now.webp"
+      alt="بازی انفجار - همین حالا شروع کنید"
+      width="400"
+    />
+  </a>
+</p>
 
 راهنمای فارسی **بازی انفجار** با تمرکز بر نحوه کار ضریب، Cashout، الگوریتم بازی، تاریخچه ضرایب، Provably Fair، مدیریت سرمایه و بررسی ادعاهای مربوط به ربات و هک بازی انفجار.
 
